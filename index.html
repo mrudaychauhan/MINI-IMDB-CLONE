@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IMDB</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="head-container flex">
+            <a href="index.html" class="brand">
+                <img src="img/imdb.png" alt="">
+            </a>
+
+            <div class="menu-parent flex">
+                <div class="search-movie flex">
+                    <input type="text" id="search" class="search-input" placeholder="Search.." onclick="loadMovies()" onkeyup="loadMovies()" autocomplete="off">
+                    <button type="submit" class="search-button" onclick="loadMovies()"></button>
+                </div>
+
+                <div class="wishlist flex">
+                    <a href="#" id="wishlist"><span class="label-text">Wishlist</span> </a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- starting with the search result list -->
+    <div id="movies-grid-container" class="movies-grid-container flex">
+        <ul class="movies-grid" id="movies-grid">
+            
+        </ul>
+
+    </div>
+
+    <!-- search list end -->
+    <script src="js/script.js"></script>
+</body>
+</html>
